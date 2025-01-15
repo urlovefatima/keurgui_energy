@@ -1,0 +1,35 @@
+
+<body>
+    <div class="connexion">
+        <div class="gauche">
+            <img [src]="imgPath" alt="maison" class="maison">
+            <h2>Avec KeurGui Energy,</h2>
+            <h3>{{ slogan }}</h3>
+        </div>
+        <div class="droite">
+            <img [src]="logoPath" alt="logo" class="logo">
+            <h2>{{ title }}</h2>
+    
+            <form action="" class="formulaire">
+                <div class="input-container">
+                    <input type="email" id="email" class="champ" placeholder=" "/>
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-container">
+                    <input type="password" id="password" class="champ" placeholder=" " />
+                    <label for="password">Mot de passe</label>
+                </div>
+            </form>
+            <a routerLink= "/mdp_oublie" class="lien_mdp_oublie">Mot de passe oublié ?</a>
+            <button>
+                <a routerLink="/pieces" class="bouton">Se connecter</a>
+            </button>
+            <p class="inscription">
+                <span>Pas de compte ? </span>
+                <a routerLink="/inscription" class="lien-inscription">Inscrivez-vous</a>
+            </p>
+            
+        </div>
+    </div>    
+</body>
+

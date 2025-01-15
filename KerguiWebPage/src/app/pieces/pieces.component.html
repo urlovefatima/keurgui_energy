@@ -1,0 +1,87 @@
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <!-- Contenu de la barre latérale -->
+             <app-sidebar></app-sidebar>
+        </div>
+    
+        <div class="content">
+            <div class="searchBar">
+                <!-- Barre de recherche -->
+                <app-search-bar></app-search-bar>
+            </div>
+        
+            <div class="contenu">
+                <div class="pieces">
+                    <h2>Pièces</h2>
+                    <div class="card1">
+                        <div class="card-piece">
+                            <div class="en-tete">
+                                <i class="ajout fa-solid fa-circle-plus"></i>
+                                <p>Ajouter une pièce</p>
+                            </div>
+                            <!-- Boucle *ngFor pour afficher les pièces -->
+                            <div class="ensemble">
+                                <div class="details_piece" *ngFor="let piece of pieces">
+                                    <div class="contenu-piece">
+                                        <img [src]="piece.imgUrl" alt="{{ piece.nom_piece }}">
+                                        <div class="piece">
+                                            <h3>{{ piece.nom_piece }}</h3>
+                                            <p>{{ piece.surface }}</p>
+                                        </div>
+                                    </div>
+                                    <i class="icone-option fa-solid fa-ellipsis"></i>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <!-- Carte pour afficher les appareils -->
+                        <div class="card-appareils">
+                            <div class="en-tete">
+                                <i class="ajout fa-solid fa-circle-plus"></i>
+                                <p>Ajouter un appareil</p>
+                            </div>
+                            <!-- Boucle *ngFor pour afficher les appareils -->
+                            <div class="ensemble">
+                                <div class="details_piece" *ngFor="let appareil of appareils">
+                                    <div class="contenu-piece">
+                                        <img [src]="appareil.imgUrl" alt="{{ appareil.nom_appareil }}">
+                                        <div class="piece">
+                                            <h3>{{ appareil.nom_appareil }}</h3>
+                                            <p>{{ appareil.nom_piece }}</p>
+                                        </div>
+                                    </div>
+                                    <i class="icone-delete fa-solid fa-trash"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                    
+                    <div class="card2">
+                        <div class="en-tete">
+                            <p>Wa Keur Gui</p>
+                        </div>
+                        <div class="membres">
+                            <div class="boucle" *ngFor="let user of users">
+                                <div class="user">
+                                    <img [src]="user.profile_user" alt="{{ user.nom_user }}">
+                                    <div class="user_detail">
+                                        <h3>{{ user.nom_user }}</h3>
+                                        <p>{{ user.mail_user }}</p>
+                                    </div>  
+                                </div>
+                                <i class="icone-delete fa-solid fa-trash"></i>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="historique">
+                    <!-- Historique des consommations -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
