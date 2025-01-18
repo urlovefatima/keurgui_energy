@@ -5,6 +5,7 @@ import { Appareil } from '../models/appareil';
 import { User } from '../models/users';
 import { SidebarComponent } from "../sidebar/sidebar.component";
 import { SearchBarComponent } from "../search-bar/search-bar.component";
+import { Consommation } from '../models/historique';
 
 @Component({
   selector: 'app-pieces',
@@ -18,9 +19,30 @@ import { SearchBarComponent } from "../search-bar/search-bar.component";
   styleUrls: ['./pieces.component.scss']
 })
 export class PiecesComponent implements OnInit {
+
   pieces!: Piece[];
   appareils!: Appareil[];
   users!: User[];
+  consommations!: Consommation[];
+  showHistoriquePiece: boolean = false;
+  selectedPieceIndex: number | null = null;
+  selectedPiece: Piece | null = null; 
+  color = "#D0E3FF";
+
+  onPieceClick(pieceIndex: number): void{
+
+    if (pieceIndex === 0) {
+
+      this.selectedPiece = this.pieces[pieceIndex];
+      this.selectedPieceIndex = pieceIndex; 
+      this.showHistoriquePiece = true;
+
+    }else{
+
+      this.showHistoriquePiece = false;
+
+    }
+  }
 
   ngOnInit(): void {
     this.pieces = [
@@ -96,5 +118,26 @@ export class PiecesComponent implements OnInit {
       ),
 
     ];
+
+    this.consommations = [
+      
+      new Consommation(
+        'Journalier',
+        '1.5kWh',
+        '0.25%'
+      ),
+
+      new Consommation(
+        'Hebdomadaire',
+        '10.5kWh',
+        '1.75%'
+      ),
+
+      new Consommation(
+        'Mensuel',
+        '45kWh',
+        '7.5%'
+      ),
+    ]
   }
 }

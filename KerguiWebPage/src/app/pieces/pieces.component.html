@@ -22,7 +22,7 @@
                             </div>
                             <!-- Boucle *ngFor pour afficher les pièces -->
                             <div class="ensemble">
-                                <div class="details_piece" *ngFor="let piece of pieces">
+                                <div class="details_piece" *ngFor="let piece of pieces; let i = index" (click)="onPieceClick(i)" [ngStyle]="{'background-color': selectedPieceIndex === i ? '#D0E3FF' : '#FFFFFF'}">
                                     <div class="contenu-piece">
                                         <img [src]="piece.imgUrl" alt="{{ piece.nom_piece }}">
                                         <div class="piece">
@@ -78,8 +78,33 @@
                     </div>
                 </div>
                 
-                <div class="historique">
+                <div class="historique" *ngIf="!showHistoriquePiece" >
                     <!-- Historique des consommations -->
+                </div>
+                <div class="historiquePiece" *ngIf="showHistoriquePiece">
+                    <h2>{{ selectedPiece?.nom_piece }}</h2>  
+                    <img [src]="selectedPiece?.imgUrl" alt="{{ selectedPiece?.nom_piece }}">
+                    <div class="consommation" *ngFor="let consommation of consommations">
+                        <div class="details_cons">
+                            <div class="type_cons">
+                                <i class="circle fa-solid fa-circle"></i>
+                                <p>{{ consommation.type_consommation }}</p>
+                            </div>
+                            <div class="cons">
+                                <p>Vous avez consommé:</p>
+                                <div class="energie">
+                                    <div class="cout_energetique">
+                                        {{ consommation.cout_energetique }}
+                                    </div>
+                                    <div class="pourcentage">
+                                        <i class="arrow-up fa-solid fa-arrow-trend-up"></i>
+                                        <span>{{ consommation.pourcentage }}</span>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -34,13 +34,7 @@ body{
 
     .contenu{
         display: flex;
-        justify-content: space-between; 
-
-        .historique{
-            width: 303px;
-            background-color: black;
-            margin-top: 1rem;
-        }
+        justify-content: space-between;
 
         .pieces{
             width: 970px;
@@ -224,6 +218,95 @@ body{
                             color: #173B61;
                             padding-top: 10px;
                             padding-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .historique{
+            width: 303px;
+            background-color: black;
+            margin-top: 1rem;
+        }
+
+        .historiquePiece{
+            width: 303px;
+            margin-top: 5rem;
+            text-align: center;
+
+            h2{
+                font-size: 28px;
+            }
+            img{
+                margin-top: 1rem;
+                width: 280px;
+                height: 175px;
+                box-shadow: 3px 3px 3px 3px rgba(0.1, 0.1, 0.1, 0.1);
+                border-radius: 20px;
+            }
+
+            .consommation{
+                margin-top: 1.5rem;
+
+                .details_cons{
+                    padding: 1rem;
+                    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+                    border-radius: 10px;
+                    margin: 0.5rem;
+
+                    .type_cons{
+                        display: flex;
+                        
+                        .circle{
+                            color: #173B61;
+                            font-size: 15px;
+                            padding-top: 0.5rem;
+                        }
+                        p{
+                            font-size: 18px;
+                            font-weight: bold;
+                            padding-left: 0.5rem;
+                            color: #173B61;
+                            padding-top: 0.3rem;
+                        }
+                    }
+
+                    .cons{
+                        display: flex;
+                        padding-bottom: 1rem;
+
+                        p{
+                            font-size: 13px;
+                            color: #173B61;
+                            padding-top: 1rem;
+                            padding-left: 2rem;
+                        }
+
+                        .energie{
+                            padding-left: 1rem;
+                            padding-top: 0.5rem;
+
+                            .cout_energetique{
+                                font-weight: bold;
+                                font-size: 15px;
+                                color: #173B61;
+                            }
+
+                            .pourcentage{
+                                display: flex;
+                                padding-top: 0.2rem;
+                                .arrow-up{
+                                    color: #48742c;
+                                    font-size: 18px;
+                                    padding-right: 2px;
+                                }
+                                span{
+                                    color: #48742c;
+                                    font-size: 15px;
+                                    font-weight: bold;
+                                }
+                            }
                         }
                     }
                 }
