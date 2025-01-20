@@ -4,6 +4,7 @@ import { InscriptionComponent } from './inscription/inscription.component';
 import { MdpOublieComponent } from './mdp-oublie/mdp-oublie.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
 import { PiecesComponent } from './pieces/pieces.component';
+import { AccueilComponent } from './accueil/accueil.component';
 
 export const routes: Routes = [
     { path: '', component: ConnexionComponent },
@@ -13,4 +14,5 @@ export const routes: Routes = [
     { path: 'reset_password', component: ResetPasswordComponent},
     { path: 'reset_password', component: ResetPasswordComponent},
     { path: 'pieces', component: PiecesComponent},
+    {path: 'accueil', component : AccueilComponent}
 ];

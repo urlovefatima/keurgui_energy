@@ -1,0 +1,14 @@
+<div class="card-deck lespiecess d-flex px-1">
+    <div *ngIf="!appauto || appauto.length === 0">Aucun appareil trouvé</div>
+
+
+    <div class="card unepiece me-4" *ngFor = "let app of appauto">
+        <h5 class="card-title p-2" style="font-size: 14px; color: #091b4d; font-weight: 700;">{{app.nom_appareil}}</h5>
+      <img class="card-img-top" src="{{app.imgUrl}}" alt="Card image cap">
+      <div class="card-body">
+    <p class="card-text"><small class="text-muted">{{app.nom_piece}}</small></p>
+      </div>
+    </div>
+    
+    
+  </div>

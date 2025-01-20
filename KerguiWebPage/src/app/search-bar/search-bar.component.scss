@@ -1,10 +1,21 @@
 
-nav{
+// nav{
+//   background-color: #173B61;
+//   height: 60px;
+//   margin-left: 1.4rem;
+//   position:sticky;
+//   width: calc(100vw - 245px);
+// }
+
+nav {
   background-color: #173B61;
   height: 60px;
-  margin-left: 1.4rem;
-  position:sticky;
-  width: calc(100vw - 245px);
+  position: sticky; 
+  top: 0; 
+  left: 245px; /* Correspond à la largeur de la sidebar */
+  width: calc(100% - 245px); 
+  display: flex; 
+   z-index: 10; 
 }
 
 input{

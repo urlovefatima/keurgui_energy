@@ -1,0 +1,131 @@
+.thehome{
+   
+    height: 100vh;
+    width: calc(100% - 571px );
+    position: absolute;
+    top: 60px;
+    left: 245px;
+    font-family: "Inter";
+}
+.maisonxjournalier{
+    height: 16rem;
+    width: 100%;
+    display: flex;
+    
+}
+.maison, .journalier{
+    position: relative;
+    height:13rem;
+}
+.maison{
+   margin:auto;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    color: #091f5b;
+    font-weight: 700;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),0 6px 20px rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    img{
+        border-radius: 10px ;
+        margin: auto;
+        height: 132px;
+        width: 228px;
+
+    }
+    .votremaison{
+        font-size: 16px;
+        margin-top: auto;
+        margin-left: 1rem ;
+    }
+    .info{
+        display: flex;
+        height: 24px; 
+    }
+    .adresse{
+      font-size: 10px;
+      margin-left:8%;
+      margin-bottom: 8%;
+    }
+    .surface{
+        font-size: 13px;
+        color: #f35b04;
+        margin-left: 35%;
+        margin-bottom: 8%;
+    }
+    
+    .circlee{
+        height:19px ;
+        width: 19px;
+        background-color: #091f5b;
+        border-radius: 50%;
+        margin-left: 15%;
+        margin-bottom: 5%;
+    }
+
+}
+.journalier{
+    margin: auto;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    color: #091f5b;
+    font-weight: 700;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),0 6px 20px rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+
+.commun{
+    width: 23rem;
+    display: flex;
+    margin: auto ;
+    justify-content: space-between;
+    
+}
+.consommation, .coutenergie{
+    background-color: #091f5b;
+    color: white;
+    height: 8rem;
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: space-between;
+    padding: 2%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),0 6px 20px rgba(0, 0, 0, 0.19);
+}
+.themoney, .theenergy{
+    font-size: 24px;
+    text-align: center;
+}
+
+.journalierr{
+    text-align: center;
+    font-weight: bold;
+}
+
+.graphique{
+    height: 382px;
+    width:100%;
+    background-color: #f35b04;
+}
+.piecess{
+    height: 248px;
+    padding-left: 50px;
+    
+}
+.automation{
+    height: 330px;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+.piecetitle, .automationtitle{
+    font-weight: bold;
+    font-size: 36px;
+    color: #091f5b;
+}
+
+body{
+    color: bisque !important;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar">
+        <app-sidebar></app-sidebar>
+    </div>
+   <div class="searchbar">
+    <app-search-bar></app-search-bar>
+   </div>
+    <div class="thehome">
+        <div class="maisonxjournalier">
+            <div class="maison">
+                <span class="votremaison">Votre maison,</span>
+                <img src="./assets/maison.jpg" alt="photo de votre maison" width="228px" height="132px">
+               <div class="info"> 
+                <div class="adresse"> Patte d'Oie Builders,</div>
+                <div class="surface"> 150m²</div>
+                <div class="circlee"></div>
+                </div>
+            </div>
+            <div class="journalier">
+                <div class="journalierr">
+                    journalier
+                    <i class="fa-solid fa-angle-down" style="padding-top: 3%;"></i>
+                </div>
+                <div class="commun">
+                    <div class="consommation ">
+                        <span style="font-weight: normal; font-size: 14px;">Consommation</span>
+                        <span class="themoney">200.000
+                            <span style="font-size: 15px;">Fr</span>
+                        </span>
+                        <span style="font-size: 12px;">Ce mois ci,</span>
+                    </div>
+                    <div class="coutenergie ">
+                        <span style="font-weight: normal; font-size: 14px;">Cout énergétique</span>
+                        <span class="theenergy">2500
+                            <span style="font-size: 12px;">kWh</span>
+                        </span>
+                        <span style="font-size: 12px;" >Ce mois ci,</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="graphique"></div>
+        <div class="piecess ">
+            <div class="piecetitle">
+                Pièces
+            </div>
+            <div class="piececontent">
+                <app-pieceaccueil></app-pieceaccueil>
+            </div>
+        </div>
+        <div class="automation">
+            <div class="automationtitle">
+                Automatisation
+            </div>
+            <div class="automationcontent">
+                <app-deviceautomation></app-deviceautomation>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

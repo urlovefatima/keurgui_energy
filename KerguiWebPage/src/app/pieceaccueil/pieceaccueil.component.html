@@ -1,0 +1,12 @@
+<div class="card-deck lespiecess d-flex px-1">
+
+    <div class="card unepiece me-4" *ngFor = "let piece of lespieces">
+        <h5 class="card-title p-2" style="font-size: 14px; color: #091b4d; font-weight: 700;">{{piece.nom_piece}}</h5>
+      <img class="card-img-top" src="{{piece.imgUrl}}" alt="Card image cap">
+      <div class="card-body">
+    <p class="card-text"><small class="text-muted">{{piece.surface}}</small></p>
+      </div>
+    </div>
+    
+    
+  </div>

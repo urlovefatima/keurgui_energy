@@ -1,0 +1,31 @@
+.lespiecess {
+    display: flex !important;
+    flex-wrap: nowrap ;
+    flex-direction: row !important;
+    justify-content: space-between;
+    overflow-x: auto;
+    height: 155px;
+    max-width: 100%;
+    margin: 0 auto; 
+    scrollbar-width: none !important;
+    padding-right: 20px !important;
+    font-size: 12px;
+    margin-top: 30px;
+    gap: 35px;
+    
+    img{
+        margin: auto;
+        width: fit-content;
+        height: 70px;
+    }
+    .unepiece{
+    width: 166px;
+    height: 155px;
+    flex: 0 0 auto; 
+    height: auto; 
+    border-radius: 10px; 
+    overflow: hidden; 
+    font-size: 12px;
+    box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.2) !important;
+}
+}
