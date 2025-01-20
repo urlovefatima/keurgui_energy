@@ -1,0 +1,45 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div{
+        display: flex;
+        align-items: center;
+        margin-top: 7%;
+        .mdp{
+            box-shadow: 0px 0px 5px #091F5B;
+            display: flex;
+            width: 30vw;
+            flex-direction: column;
+            align-items: center; 
+            border-radius: 15px;
+            justify-content:center;
+            .message{
+                color: #091F5B;
+                font-weight: bold;
+                font-family: sans-serif;
+                font-size: 30px;
+                text-align: center;
+            }
+            .image{
+                display: flex;
+                justify-content: center;
+                margin-bottom: 10px;
+                img{
+                    width: 30%;
+                }
+            }
+            button{
+                width: 100px;
+                height: 40px;
+                border-radius: 15px;
+                background-color: #091F5B;
+                color: white;
+                border: none;
+                font-size: larger;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

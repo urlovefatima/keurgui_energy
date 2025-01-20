@@ -1,0 +1,15 @@
+.par__{
+    .img_{
+        box-shadow: 0px 2px 2px gray;
+        border-radius: 10px;
+        overflow: hidden;
+        .img__{
+            height: 20vh;
+            width: 20vw;
+        }
+    }
+    .consos > div{
+        border-radius: 10px;
+        box-shadow: 0px 2px 2px gray;
+    }
+}

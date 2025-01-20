@@ -25,37 +25,29 @@ body{
     }
 
     .content{
-        
-        .searchBar{
-            height: 44px; 
-            width: calc(100vw - 245px);
-        }
+        width: calc(100vw - 245px);
     }
 
     .contenu{
         display: flex;
         justify-content: space-between;
-
         .pieces{
-            width: 970px;
+            width: calc(100vw - 550px);
             margin-right: 1rem;
             margin-left: 1rem;
             margin-top: 1rem;
-
             h2{
                 color: #173B61;
-                margin-top: 2rem;
                 font-weight: bold;
                 margin-left: 2rem;
             }
 
             .card1{
                 display: flex;
-
+                height: calc(100vh - 34%);
                 .card-piece,.card-appareils{
                     display: flex;
                     flex-direction: column;
-                    margin-top: 1rem;
                     box-shadow: lightgray 0 0 5px;
                     border-radius: 8px;
                     flex: 1;
@@ -149,7 +141,6 @@ body{
             }
 
             .card2{
-                margin-top: 2rem;
                 margin-left: 1rem;
                 box-shadow: 2px 2px 2px 3px rgba(0.1, 0.1, 0.1, 0.1);
                 border-radius: 10px;
@@ -158,10 +149,7 @@ body{
 
                     p{
                         font-weight: bold;
-                        padding-top: 0.5rem;
                         padding-left: 2rem;
-                        padding-bottom: 0.5rem;
-                        font-size: 18px;
                         color: #173B61;
 
                     }
@@ -177,10 +165,8 @@ body{
                         display: flex;
                         justify-content: space-between;
                         margin-left: 2rem;
-                        padding-top: 1rem;
                         padding-left: 1rem;
                         width: 380px;
-                        height: 80px;
                         border-radius: 10px;
                         border: 0.2px solid #E6EDFB;
 
@@ -225,32 +211,29 @@ body{
         }
 
         .historique{
-            width: 303px;
+            width: 260px;
             background-color: black;
             margin-top: 1rem;
         }
 
         .historiquePiece{
-            width: 303px;
-            margin-top: 5rem;
-            text-align: center;
+            width: 260px;
 
             h2{
                 font-size: 28px;
+                color: #173B61;
             }
             img{
                 margin-top: 1rem;
-                width: 280px;
-                height: 175px;
+                width: 250px;
+                height: 150px;
                 box-shadow: 3px 3px 3px 3px rgba(0.1, 0.1, 0.1, 0.1);
                 border-radius: 20px;
             }
 
             .consommation{
-                margin-top: 1.5rem;
 
                 .details_cons{
-                    padding: 1rem;
                     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
                     border-radius: 10px;
                     margin: 0.5rem;
@@ -261,7 +244,6 @@ body{
                         .circle{
                             color: #173B61;
                             font-size: 15px;
-                            padding-top: 0.5rem;
                         }
                         p{
                             font-size: 18px;
@@ -274,22 +256,16 @@ body{
 
                     .cons{
                         display: flex;
-                        padding-bottom: 1rem;
 
                         p{
                             font-size: 13px;
                             color: #173B61;
-                            padding-top: 1rem;
-                            padding-left: 2rem;
                         }
 
                         .energie{
-                            padding-left: 1rem;
-                            padding-top: 0.5rem;
 
                             .cout_energetique{
                                 font-weight: bold;
-                                font-size: 15px;
                                 color: #173B61;
                             }
 
@@ -298,12 +274,12 @@ body{
                                 padding-top: 0.2rem;
                                 .arrow-up{
                                     color: #48742c;
-                                    font-size: 18px;
+                                    font-size: 15px;
                                     padding-right: 2px;
                                 }
                                 span{
                                     color: #48742c;
-                                    font-size: 15px;
+                                    font-size: 13px;
                                     font-weight: bold;
                                 }
                             }

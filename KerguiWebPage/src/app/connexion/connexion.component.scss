@@ -56,8 +56,8 @@ overflow: hidden;
     
 
     .logo {
-      width: 300px;
-      margin-bottom: 0;
+      width: 12vw;
+      margin-bottom: 10px;
     }
 
     h2 {
@@ -111,6 +111,7 @@ overflow: hidden;
           position: absolute;
           top: 50%;
           left: 1rem;
+          margin-left: 10px;
           transform: translateY(-50%);
           font-size: 1rem;
           color: #8da0b9;
@@ -129,7 +130,6 @@ overflow: hidden;
     }
 
     button{
-      margin-top: 3rem;
       background-color:#173B61;
       height: 50px;
       width: 180px;
