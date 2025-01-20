@@ -16,14 +16,17 @@ nav {
   width: calc(100% - 245px); 
   display: flex; 
    z-index: 10; 
+  // margin-left: 1.4rem;
+  // position:sticky;
+  max-width: calc(100vw - 245px);
 }
 
 input{
   width: 350px;
   height: 30px;
   border-radius: 10px;
-  margin-top: 13px;
-  margin-left: 40px;
+  // margin-top: 13px;
+  // margin-left: 40px;
   border: 2px solid white;
   padding-left: 10px;
 }
@@ -34,10 +37,6 @@ i{
 .search-button{
   color: #173B61;
   margin-left: -30px;
-}
-.form-element2{
-  margin-left: 1100px;
-  margin-top: -28px;
 }
 .element2{
   margin-left: 10px;
