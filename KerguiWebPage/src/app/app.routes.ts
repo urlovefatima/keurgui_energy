@@ -8,6 +8,7 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { MdpChangeComponent } from './reset-password/mdp-change/mdp-change.component';
 import { SplashScreenComponent } from './splash-screen/splash-screen.component';
 import { AppareilComponent } from './appareil/appareil.component';
+import { HistoriqueComponent } from './historique/historique.component';
 
 export const routes: Routes = [
     { path: '', component: SplashScreenComponent },
@@ -20,4 +21,5 @@ export const routes: Routes = [
     { path: 'pieces', component: PiecesComponent},
     {path: 'accueil', component : AccueilComponent},
     { path: 'appareils', component: AppareilComponent},
+    {path: 'historique', component: HistoriqueComponent}
 ];
