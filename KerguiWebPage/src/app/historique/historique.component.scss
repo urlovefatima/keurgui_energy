@@ -1,0 +1,75 @@
+.historiquecontent{
+    width: calc(100% - 245px);
+    max-height: 100vh;
+    position: relative;
+    left: 245px;
+    font-family: "Inter";
+}
+.historiquetitle{
+    color: #173b61;
+    font-weight: bold;
+    font-size: 36px;
+    font-family: "Inter";
+}
+.graphiques{
+    height: 289px;
+    border-radius: 10px;
+    background-color: rgb(109, 175, 246, 0.5);
+    .graphiquetitle{
+        color: #173b61;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .premiergraphique, .deuxiemegraphique{
+        height: 209px;
+        width: 460px;
+        background-color: white;
+        margin: auto;
+        border-radius: 10px;
+
+    }
+}
+
+.consommationcout{
+    height: 325px;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    .consommation, .cout{
+        height: 307px;
+        width: 500px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3) !important;
+    }
+    .vosappareils{
+        font-weight: bold;
+        font-size: 20px;
+        color: #173b61;
+    }
+    .appmensuel, .apphebdomadaire{
+        font-size: 20px;
+        font-weight: bold;
+        color: #173b61;
+    }
+    .common{
+        width: 30rem;
+        display: flex;
+        margin: auto ;
+        justify-content: space-between !important;
+    
+        
+        .cons, .cost{
+            background: linear-gradient(to bottom, #091f5b, #6daff6);
+            color: white;
+            height: 183px;
+            width: 213px !important;
+            display: flex;
+            flex-direction: column;
+            border-radius: 15px;
+            justify-content: space-between;
+            padding: 2%;
+           
+           
+        }
+    }
+    }
