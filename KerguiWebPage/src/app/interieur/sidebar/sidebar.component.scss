@@ -1,0 +1,89 @@
+body{
+    margin: 0!important;
+    padding: 0;
+    max-width: 100vw;
+    max-height: 100vh;
+    background-color: blue;
+
+}
+
+.active__{
+    color: white !important;
+    background-color: #173b61;
+}
+
+*{
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.rectanglewhite {
+    position: fixed; /* S'assure que la sidebar est fixée sur le côté gauche */
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 245px;
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    box-shadow: 0px 0px 3px rgba(#000000, 0.3);
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}
+
+// .rectanglewhite{
+//     max-height: 768px;
+//     margin: 0;
+//     width: 245px;
+//     box-shadow: 0px 0px 3px rgba(#000000,0.5);
+//     font-family: 'Nunito Sans', sans-serif;
+//     font-weight: bold;
+//     background-color: bisque;
+// }
+.thesidebar{
+    font-size: 15px;
+ 
+    font-size: 15px;
+}
+
+.common{
+    padding-top:10px;
+    height: 40px ;
+    width: 245px;
+    padding-left: 20px;
+    color: #173b61;
+    box-shadow: 0px 2px 0px 0px rgba(#959595,0.15);
+}
+.common:hover{
+    background-color:#173b61;
+    color: white;
+}
+
+
+.deconnexion{
+    height: 44px;
+    color: #173b61;
+    padding-top: 10px;
+    padding-left: 20px;
+    box-shadow: 0px 0px 2px 0px rgba(#828181,0.5);
+
+    a{
+        text-decoration: none;
+        color: #173b61;
+        padding-left: 5px;
+    }
+}
+
+.titlee{
+    display: flex;
+}
+.secondtitle{
+    position: relative;
+    left: -15px;
+    padding-top: 18px;
+    color: #173b61;
+}
+

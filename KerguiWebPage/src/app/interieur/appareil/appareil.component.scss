@@ -1,0 +1,13 @@
+
+.cadre_app{
+    flex: 5;
+    max-height: 100vh;
+    .cadre_{
+        height: 79%;
+        overflow-y: auto;
+    }
+}
+
+div::-webkit-scrollbar{
+    display: none;
+}
