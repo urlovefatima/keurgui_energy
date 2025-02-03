@@ -1,0 +1,111 @@
+/* Conteneur principal */
+.historique-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Titre */
+.historique-header {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Conteneur défilant */
+.historique-scrollable {
+  max-height: 500px; /* Limite la hauteur */
+  overflow-y: auto; /* Active le scroll vertical */
+  margin-bottom: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+/* Style des items */
+.historique-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.historique-info {
+  font-size: 14px;
+}
+
+.device-name {
+  font-weight: bold;
+  margin: 0;
+}
+
+.device-status {
+  color: gray;
+  margin: 0;
+}
+
+.historique-stats {
+  text-align: right;
+}
+
+.consumption {
+  font-weight: bold;
+  margin: 0;
+}
+
+.variation {
+  margin: 0;
+  font-size: 12px;
+}
+
+.positive {
+  color: green;
+}
+
+.negative {
+  color: red;
+}
+
+/* Voir tout */
+.voir-tout {
+  text-align: center;
+}
+
+.voir-tout a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.voir-tout a:hover {
+  text-decoration: underline;
+}
+
+/* Scrollbar personnalisé */
+.historique-scrollable::-webkit-scrollbar {
+  width: 8px;
+}
+
+.historique-scrollable::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+.historique-scrollable::-webkit-scrollbar-thumb {
+  background: #007bff;
+  border-radius: 5px;
+}
+
+.historique-scrollable::-webkit-scrollbar-thumb:hover {
+  background: #0056b3;
+}
+

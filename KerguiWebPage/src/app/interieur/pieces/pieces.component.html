@@ -20,7 +20,7 @@
                         <i class="icone-option fa-solid fa-ellipsis"></i>
                     </div>
                 </div>
-                
+
             </div>
 
             <!-- Carte pour afficher les appareils -->
@@ -43,12 +43,12 @@
                     </div>
                 </div>
             </div>
-        </div>  
-        
+        </div>
+
         <div class="card2 mt-2 mt-xxl-3">
             <div class="en-tete py-0 my-0">
                 <p class="pt-1 mb-1 pb-1 pt-xxl-3">Wa Keur Gui</p>
-            </div>  
+            </div>
             <div class="membres pb-xxl-4 pt-0 me-4 mb-4">
                 <div class="boucle my-0 pt-2" *ngFor="let user of users">
                     <div class="user">
@@ -56,20 +56,21 @@
                         <div class="user_detail">
                             <h3>{{ user.nom_user }}</h3>
                             <p>{{ user.mail_user }}</p>
-                        </div>  
+                        </div>
                     </div>
                     <i class="icone-delete fa-solid fa-trash"></i>
                 </div>
-                
+
             </div>
         </div>
     </div>
-    
+
     <div class="historique me-3" *ngIf="!showHistoriquePiece" >
         <!-- Historique des consommations -->
+      <app-historique-cons></app-historique-cons>
     </div>
     <div class="historiquePiece text-center me-3" *ngIf="showHistoriquePiece">
-        <h2 class="mt-3 mt-xxl-5 text-center fw-bold">{{ selectedPiece?.nom_piece }}</h2>  
+        <h2 class="mt-3 mt-xxl-5 text-center fw-bold">{{ selectedPiece?.nom_piece }}</h2>
         <img class="" [src]="selectedPiece?.imgUrl" alt="{{ selectedPiece?.nom_piece }}">
         <div class="consommation consos  mt-xxl-2" *ngFor="let consommation of consommations">
             <div class="border px-3 py-2 py-xxl-3 mt-3">

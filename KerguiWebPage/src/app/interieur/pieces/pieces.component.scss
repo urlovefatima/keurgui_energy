@@ -70,18 +70,18 @@
                                 border-radius: 50%;
                                 margin-bottom: 8px;
                             }
-    
+
                             .piece{
                                 font-size: 14px;
                                 margin-left: 1rem;
-    
+
                                 h3{
                                     font-size: 16px;
                                     color: #173B61;
                                     padding-top: 0.4rem;
-                                
+
                                 }
-    
+
                                 p{
                                     margin-top: 0.3rem;
                                     color: #666;
@@ -100,7 +100,7 @@
                         .icone-delete{
                             font-size: 20px;
                         }
-                        
+
                     }
                 }
 
@@ -124,7 +124,7 @@
 
                 }
             }
-            
+
 
             .membres{
 
@@ -156,7 +156,7 @@
                                 font-size: 16px;
                                 color: #173B61;
                                 padding-top: 0.4rem;
-                            
+
                             }
 
                             p{
@@ -179,8 +179,9 @@
     }
 
     .historique{
-        width: 300px;
-        background-color: black;
+      margin-right: 2rem;
+        width: 500px;
+        /*background-color: black;*/
         margin-top: 1rem;
     }
 
@@ -208,7 +209,7 @@
 
                 .type_cons{
                     display: flex;
-                    
+
                     .circle{
                         color: #173B61;
                         font-size: 15px;

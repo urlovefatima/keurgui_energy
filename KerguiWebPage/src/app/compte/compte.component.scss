@@ -1,0 +1,65 @@
+/* Positionnement du panneau latéral */
+.side-panel {
+  position: fixed; /* Fixé sur le côté gauche */
+  top: 0;
+  width: 300px; /* Largeur fixe */
+  height: 800px; /* Prend toute la hauteur de l'écran */
+  background-color: #f8f8f8;
+  border-right: 1px solid #ddd; /* Ligne de séparation à droite */
+  padding: 20px;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  color: #333;
+  overflow-y: auto; /* Permet de scroller si le contenu dépasse */
+}
+
+/* Style du titre */
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #002d6b;
+  text-align: center;
+}
+
+/* Section de l'image de profil */
+.profile {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.profile-picture {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Informations de l'utilisateur */
+.info {
+  background-color: #eaeaea;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.info-item i {
+  color: #002d6b;
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.info-item span {
+  font-size: 1rem;
+  color: #002d6b;
+}
+
+.info-item:last-child {
+  margin-bottom: 0;
+}

@@ -1,0 +1,34 @@
+<link rel="stylesheet" href="historique-cons.component.scss">
+<div class="historique-container">
+  <h3 class="historique-header">Historique</h3>
+
+  <!-- Conteneur défilant -->
+  <div class="historique-scrollable">
+    <div class="historique-item" *ngFor="let item of historiqueItems">
+      <div class="historique-info">
+        <p class="device-name">{{ item.nom }} ({{ item.emplacement }})</p>
+        <p class="device-status">Actif depuis {{ item.duree }}</p>
+      </div>
+      <div class="historique-stats">
+        <p class="consumption">{{ item.consommation }} kWh</p>
+        <p
+          class="variation"
+          [ngClass]="{
+            'positive': item.variation >= 0,
+            'negative': item.variation < 0
+          }"
+        >
+          {{ item.variation | percent }}
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lien pour voir tout -->
+  <div class="voir-tout">
+    <a href="#">Voir tout &rarr;</a>
+  </div>
+</div>
+
+
+

@@ -4,13 +4,15 @@ import { CommonModule } from '@angular/common';
 import { Appareil } from '../../models/appareil';
 import { User } from '../../models/users';
 import { Consommation } from '../../models/historique';
+import {HistoriqueConsComponent} from '../../historique-cons/historique-cons.component';
 
 @Component({
   selector: 'app-pieces',
   standalone: true,
   imports: [
     CommonModule,
-],
+    HistoriqueConsComponent,
+  ],
   templateUrl: './pieces.component.html',
   styleUrls: ['./pieces.component.scss']
 })
@@ -22,7 +24,7 @@ export class PiecesComponent implements OnInit {
   consommations!: Consommation[];
   showHistoriquePiece: boolean = false;
   selectedPieceIndex: number | null = null;
-  selectedPiece: Piece | null = null; 
+  selectedPiece: Piece | null = null;
   color = "#D0E3FF";
 
   onPieceClick(pieceIndex: number): void{
@@ -30,7 +32,7 @@ export class PiecesComponent implements OnInit {
     if (pieceIndex === 0) {
 
       this.selectedPiece = this.pieces[pieceIndex];
-      this.selectedPieceIndex = pieceIndex; 
+      this.selectedPieceIndex = pieceIndex;
       this.showHistoriquePiece = true;
 
     }else{
@@ -116,7 +118,7 @@ export class PiecesComponent implements OnInit {
     ];
 
     this.consommations = [
-      
+
       new Consommation(
         'Journalier',
         '1.5kWh',
