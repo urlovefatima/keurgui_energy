@@ -65,7 +65,7 @@
         </div>
     </div>
 
-    <div class="historique me-3" *ngIf="!showHistoriquePiece" >
+    <div class="historique me-2" *ngIf="!showHistoriquePiece" >
         <!-- Historique des consommations -->
       <app-historique-cons></app-historique-cons>
     </div>
@@ -73,7 +73,7 @@
         <h2 class="mt-3 mt-xxl-5 text-center fw-bold">{{ selectedPiece?.nom_piece }}</h2>
         <img class="" [src]="selectedPiece?.imgUrl" alt="{{ selectedPiece?.nom_piece }}">
         <div class="consommation consos  mt-xxl-2" *ngFor="let consommation of consommations">
-            <div class="border px-3 py-2 py-xxl-3 mt-3">
+            <div class="border px-3 py-2 py-xxl-4 mt-3">
                 <div class="fw-bolder text-start"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
                     <circle cx="6" cy="6" r="6"/>
                     </svg> {{consommation.type_consommation}}</div>

@@ -1,23 +1,27 @@
+
 .historiquecontent{
     max-height: calc(100vh - 65px);
-    overflow-y: auto;
+    overflow-y: hidden;
     overflow-x: hidden;
+    padding-top: 2vh;
 }
 .historiquetitle{
     color: #173b61;
     font-weight: bold;
     font-size: 36px;
+    margin-left: 3vw;
 }
 .graphiques{
     border-radius: 10px;
     background-color: rgb(109, 175, 246, 0.5);
+    height: 37vh;
     .graphiquetitle{
         color: #173b61;
         font-size: 16px;
         font-weight: bold;
     }
     .premiergraphique, .deuxiemegraphique{
-        height: 27vh;
+        height: 26vh;
         width: 32vw;
         background-color: white;
         margin: auto;
@@ -28,9 +32,10 @@
 
 .consommationcout{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     font-weight: 700;
     max-width: calc(100vw - 250px);
+    height: 34vh;
     .consommation, .cout{
         // height: 307px;
         // width: 500px;
@@ -48,22 +53,24 @@
         color: #173b61;
     }
     .common{
-        width: 34vw;
+        width: 35vw;
         display: flex;
+        // margin-left: 1rem;
         // margin: auto ;
-        justify-content: space-around !important;
+        // justify-content: center;
     
         
         .cons, .cost{
             background: linear-gradient(to bottom, #091f5b, #6daff6);
             color: white;
             // height: 183px;
-            width: 14rem;
+            width: 15vw;
+            height: 23vh;
             display: flex;
             flex-direction: column;
             border-radius: 15px;
             justify-content: space-between;
-            padding: 2%;
+            padding: 2vh;
             margin: 0rem 1rem 1rem 1rem;
         }
     }

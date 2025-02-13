@@ -1,12 +1,14 @@
 /* Conteneur principal */
 .historique-container {
   background-color: white;
+  color: #173B61;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 350px;
   display: flex;
+  height: calc(100vh - 85px);
   flex-direction: column;
 }
 
@@ -20,7 +22,7 @@
 
 /* Conteneur défilant */
 .historique-scrollable {
-  max-height: 500px; /* Limite la hauteur */
+  max-height: calc(100vh - 100px); /* Limite la hauteur */
   overflow-y: auto; /* Active le scroll vertical */
   margin-bottom: 20px;
   border: 1px solid #e0e0e0;
@@ -83,7 +85,7 @@
 .voir-tout a {
   text-decoration: none;
   font-weight: bold;
-  color: #007bff;
+  color: #173B61;
 }
 
 .voir-tout a:hover {
@@ -101,7 +103,7 @@
 }
 
 .historique-scrollable::-webkit-scrollbar-thumb {
-  background: #007bff;
+  background: #173B61;
   border-radius: 5px;
 }
 

@@ -1,10 +1,11 @@
 import { Component, Input } from '@angular/core';
 import { Appareil } from '../../../models/appareil';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-appar',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './appar.component.html',
   styleUrl: './appar.component.scss'
 })

@@ -10,7 +10,8 @@ import { SplashScreenComponent } from './splash-screen/splash-screen.component';
 import { AppareilComponent } from './interieur/appareil/appareil.component';
 import { HistoriqueComponent } from './interieur/historique/historique.component';
 import { InterieurComponent } from './interieur/interieur.component';
-import {NotificationsComponent} from './notifications/notifications.component';
+import { NotificationsComponent } from './notifications/notifications.component';
+import { CompteComponent } from './compte/compte.component';
 
 export const routes: Routes = [
     { path: '', component: SplashScreenComponent },
@@ -20,13 +21,13 @@ export const routes: Routes = [
         children: [
             { path: 'mdp_oublie', component: MdpOublieComponent},
             { path: 'reset_password', component: ResetPasswordComponent},
-            { path: 'reset_password', component: ResetPasswordComponent},
             { path: 'password_reset', component: MdpChangeComponent},
             { path: 'pieces', component: PiecesComponent},
             { path: '', component : AccueilComponent},
             { path: 'appareils', component: AppareilComponent},
-            { path: 'historique', component: HistoriqueComponent}
+            { path: 'historique', component: HistoriqueComponent},
+            { path: 'compte', component: CompteComponent}
         ]
     },
-  {path :'notifications' , component:NotificationsComponent},
+    {path :'notifications' , component:NotificationsComponent},
 ];

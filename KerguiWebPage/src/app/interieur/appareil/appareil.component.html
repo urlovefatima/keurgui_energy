@@ -6,16 +6,19 @@
 
 
 <div class="d-flex flex-direction-column">
-    <div class="cadre_app">
+    <div class="cadre_app px-1">
         <h2 class="ms-5 mt-3 fw-bold">Appareils</h2>
-        <div class="d-flex flex-wrap justify-content-center mx-2 cadre_">
-            @for (appareil of appareils; track appareil.nom_appareil){
-                <app-appar [appareil]="appareil"/>
-            }
+        <div class="d-flex flex-wrap justify-content-around mx-2 cadre_">
+            <div class="d-flex flex-column div_1 my-2 px-3 pb-2 rounded-3" *ngFor="let appareil of appareils; let i = index" (click)="onAppareilClick(i)" [ngClass]="{'selectedapp': selectedAppareilIndex === i && showHistoriqueAppareil}">
+                <app-appar [appareil]="appareil"></app-appar>
+            </div>
         </div>
-
     </div>
-    <div style="flex: 2;">
+
+    <div style="flex: 2.3;" class="hcons" *ngIf="!showHistoriqueAppareil">
+        <app-historique-cons/>
+    </div>
+    <div style="flex: 2.3;" *ngIf="showHistoriqueAppareil">
         <app-conso [appareil]="appareils[0]" [conso]="consommations[0]"/>
     </div>
 </div>

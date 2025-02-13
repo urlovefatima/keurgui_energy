@@ -80,25 +80,29 @@ export class PiecesComponent implements OnInit {
       new Appareil(
         'Climatiseur',
         'Salon',
-        'assets/climatiseur.webp'
+        'assets/climatiseur.webp',
+        true
       ),
 
       new Appareil(
         'Lampe',
         'Salon',
-        'assets/lampe.webp'
+        'assets/lampe.webp',
+        false
       ),
 
       new Appareil(
         'Baffle',
         'Salon',
-        'assets/baffle.webp'
+        'assets/baffle.webp',
+        false
       ),
 
       new Appareil(
         'Humidifier',
         'Salon',
-        'assets/humidifier.webp'
+        'assets/humidifier.webp',
+        false
       ),
     ];
 

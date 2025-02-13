@@ -1,8 +1,20 @@
+// *{
+//   overflow: hidden;
+// }
+div::-webkit-scrollbar{
+  display: none;
+}
 .notifications-container {
   background: #fff;
+  height: calc(100vh - 88px);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow-y: auto !important;
+  h2{
+    color: #173B61;
+    font-weight: bolder;
+  }
 }
 
 .notification-card {
@@ -38,7 +50,7 @@
     h3 {
       margin: 0;
       font-size: 18px;
-      color: #2c3e50;
+      color: #173B61;
     }
 
     p {
@@ -71,6 +83,7 @@
     /* background: #f5f6fa;*/
     display: flex;
     flex-direction: column;
+    overflow-y: hidden;
 
     .search-bar {
       height: 60px; /* Hauteur fixe pour la barre de recherche */
@@ -79,7 +92,7 @@
 
     .dashboard {
       display: flex;
-      gap: 20px;
+      gap: 5px;
       padding: 20px;
 
       .left-panel {
@@ -87,7 +100,7 @@
       }
 
       .right-panel {
-        flex: 2; /* Historique (partie secondaire) */
+        flex: 2.1; /* Historique (partie secondaire) */
       }
     }
   }

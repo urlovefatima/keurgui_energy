@@ -3,11 +3,12 @@ import { SidebarComponent } from '../sidebar/sidebar.component';
 import { SearchBarComponent } from '../search-bar/search-bar.component';
 import { PremiergraphiqueComponent } from '../premiergraphique/premiergraphique.component';
 import { DeuxiemegraphiqueComponent } from '../deuxiemegraphique/deuxiemegraphique.component';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-historique',
   standalone: true,
-  imports: [SidebarComponent, SearchBarComponent,PremiergraphiqueComponent, DeuxiemegraphiqueComponent],
+  imports: [RouterLink,PremiergraphiqueComponent, DeuxiemegraphiqueComponent],
   templateUrl: './historique.component.html',
   styleUrl: './historique.component.scss'
 })

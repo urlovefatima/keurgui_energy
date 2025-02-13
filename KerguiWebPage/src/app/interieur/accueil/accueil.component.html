@@ -12,7 +12,7 @@
             </div>
             <div class="journalier">
                 <div class="text-start ps-3 journalierr">
-                    journalier
+                    Journalier
                     <i class="fa-solid fa-angle-down" style="padding-top: 3%;"></i>
                 </div>
                 <div class="commun">
@@ -38,7 +38,7 @@
         </div>
         <div class="piecess ">
             <div class="piecetitle">
-                Pièces
+                <a [routerLink]="['/keurgui', 'pieces']" style="text-decoration: none; color: #091f5b;">Pièces</a>
             </div>
             <div class="piececontent">
                 <app-pieceaccueil></app-pieceaccueil>
@@ -46,7 +46,7 @@
         </div>
         <div class="automation">
             <div class="automationtitle">
-                Automatisation
+                <a [routerLink]="['/keurgui', 'appareils']" style="text-decoration: none; color: #091f5b;">Automatisation</a>
             </div>
             <div class="automationcontent">
                 <app-deviceautomation></app-deviceautomation>
