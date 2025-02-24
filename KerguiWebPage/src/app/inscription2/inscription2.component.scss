@@ -50,11 +50,12 @@
       }
     
       .droite {
-        flex: 1;
+        flex: 1.2;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    
         .logo {
           width: 12vw;
         }

@@ -3,11 +3,6 @@
 
 <body>
     <div class="inscription" @superSmoothSlide>
-        <div class="gauche">
-            <img [src]="imgPath" alt="maison" class="maison">
-            <h2>Avec KeurGui Energy,</h2>
-            <h3>{{ slogan }}</h3>
-        </div>
         
         <div class="droite">
             <img [src]="logoPath" alt="logo" class="logo">
@@ -15,27 +10,32 @@
     
             <form action="">
                 <div class="input-container text-center">
-                    <input type="text" id="prenom" class="champ" placeholder=" "/>
-                    <label for="prenom">Prénom</label>
+                    <input type="email" id="email" class="champ" placeholder=" "/>
+                    <label for="email">Email</label>
                 </div>
                 <div class="input-container text-center">
-                    <input type="text" id="nom" class="champ" placeholder=" " />
-                    <label for="nom">Nom</label>
+                    <input type="password" id="password" class="champ" placeholder=" " />
+                    <label for="password">Mot de passe</label>
                 </div>
                 <div class="input-container text-center">
-                    <input type="number" id="telephone" class="champ" placeholder=" " />
-                    <label for="telephone">Téléphone</label>
+                    <input type="password" id="password" class="champ" placeholder=" " />
+                    <label for="password">Confirmer mot de passe</label>
                 </div>
             </form>
             <button class="text-center mt-4 mt-xxl-5">
-                <a routerLink="/inscription2" class="bouton">Suivant</a>
+                <a routerLink="/connexion" class="bouton">S'inscrire</a>
             </button>
-            <p class="connexion mt-4 mt-xxl-5">
+            <!-- <p class="connexion mt-4 mt-xxl-5">
                 <span>Vous avez déjà un compte ? </span>
                 <a routerLink="/connexion" class="lien-connexion">Connectez-vous</a>
-            </p>       
+              </p> -->
+              
         </div>
-        
+        <div class="gauche">
+            <img [src]="imgPath" alt="maison" class="maison">
+            <h2>Avec KeurGui Energy,</h2>
+            <h3>{{ slogan }}</h3>
+        </div>
     </div>
 </body>
 

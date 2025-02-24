@@ -12,11 +12,13 @@ import { HistoriqueComponent } from './interieur/historique/historique.component
 import { InterieurComponent } from './interieur/interieur.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { CompteComponent } from './compte/compte.component';
+import { Inscription2Component } from './inscription2/inscription2.component';
 
 export const routes: Routes = [
     { path: '', component: SplashScreenComponent },
     { path: 'connexion', component: ConnexionComponent },
     { path: 'inscription', component: InscriptionComponent },
+    { path: 'inscription2', component: Inscription2Component},
     { path: 'keurgui', component: InterieurComponent,
         children: [
             { path: 'mdp_oublie', component: MdpOublieComponent},
