@@ -11,28 +11,28 @@
         <div class="droite">
             <img [src]="logoPath" alt="logo" class="logo">
             <h2 class="text-center mb-3">{{ title }}</h2>
-    
+
             <form action="" class="formulaire">
                 <div class="input-container text-center">
-                    <input type="email" id="email" class="champ" placeholder=" "/>
+                    <input type="email" id="email" class="champ" name="email" [(ngModel)]="email"/>
                     <label for="email">Email</label>
                 </div>
                 <div class="input-container text-center">
-                    <input type="password" id="password" class="champ" placeholder=" " />
+                    <input type="password" id="password" class="champ" name="password" [(ngModel)]="password" />
                     <label for="password">Mot de passe</label>
                 </div>
             </form>
             <a routerLink= "/mdp_oublie" class="lien_mdp_oublie mt-3">Mot de passe oublié ?</a>
             <button class="mt-4">
-                <a routerLink="/keurgui" class="bouton">Se connecter</a>
- 
+                <a (click)="login()" class="bouton">Se connecter</a>
+
             </button>
             <p class="inscription">
                 <span>Pas de compte ? </span>
                 <a routerLink="/inscription" class="lien-inscription">Inscrivez-vous</a>
             </p>
-            
+
         </div>
-    </div>    
+    </div>
 </body>
 
